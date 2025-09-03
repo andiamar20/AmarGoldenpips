@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGP AmarGoldenPips</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000; /* kembali ke hitam */
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 50px;
+      color: #ffcc00;
+      text-shadow: 0px 0px 8px rgba(0,0,0,0.7);
+    }
+    p.subtitle {
+      color: #eee;
+      margin-bottom: 40px;
+    }
+    .btn {
+      display: block;
+      margin: 15px auto;
+      padding: 15px 20px;
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ffdb4d;
+      transform: scale(1.05);
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 13px;
+      color: #bbb;
+      text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    }
+    /* Popup */
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.9);
+    }
+    .popup-content {
+      background: #1a1a1a;
+      margin: 10% auto;
+      padding: 25px;
+      border-radius: 15px;
+      width: 85%;
+      max-width: 450px;
+      color: #fff;
+      text-align: left;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+    }
+    .popup-content h2 {
+      color: #ffcc00;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .close {
+      float: right;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #ffcc00;
+    }
+    .popup .btn {
+      margin: 10px 0;
+      text-align: center;
+    }
+    ul {
+      margin: 10px 0 20px 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>AGP AmarGoldenPips</h1>
+  <p class="subtitle">Amar Golden Pips | XAUUSD Only 🏆</p>
+
+  <!-- Tombol -->
+  <a href="https://t.me/AmarGoldenpipss" class="btn">🚀 Join Grup Telegram (Gratis)</a>
+  <a href="#" class="btn" onclick="openPopup('vip')">⭐ Join Grup VIP</a>
+  <a href="https://t.me/AmarGoldenpips" class="btn">💬 Chat Admin (Telegram)</a>
+  <a href="https://wa.me/6282324412773" class="btn">📱 Chat Admin (WhatsApp)</a>
+  <a href="#" class="btn" onclick="openPopup('privat')">🎯 Privat Class 1 on 1</a>
+
+  <footer>
+    © 2025 AGP AmarGoldenPips
+  </footer>
+
+  <!-- Popup VIP -->
+  <div id="popup-vip" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('vip')">&times;</span>
+      <h2>Join Grup VIP ⭐</h2>
+      <p>
+        Silakan buat akun baru di <b>Vantage</b> melalui link di bawah ini untuk bisa masuk ke grup VIP.
+        Apabila terdapat kesulitan dalam proses pendaftaran, silakan menghubungi admin untuk pendampingan.
+      </p>
+      <p>
+        <a href="https://www.vantagemarketsea.com/id/open-live-account/?affid=NzI2NjQwNw==" target="_blank" class="btn">🌐 Daftar Akun Vantage</a>
+      </p>
+      <a href="https://t.me/AmarGoldenpips" class="btn">💬 Hubungi Admin (Telegram)</a>
+    </div>
+  </div>
+
+  <!-- Popup Privat -->
+  <div id="popup-privat" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('privat')">&times;</span>
+      <h2>Privat Class 1 on 1 🎯</h2>
+      <p>
+        Dapatkan <b>Privat Class 1 on 1</b> dengan harga spesial:<br>
+        <del>Rp 1.500.000</del> <b style="color:#ffcc00;">Rp 1.000.000</b>
+      </p>
+      <p>Akses yang Anda dapatkan:</p>
+      <ul>
+        <li>✅ Belajar langsung 1 on 1</li>
+        <li>✅ Strategi trading XAUUSD</li>
+        <li>✅ Dapatkan metode yang saya gunakan</li>
+        <li>✅ Support penuh dari admin</li>
+      </ul>
+      <p>Hubungi admin untuk mendaftar:</p>
+      <a href="https://wa.me/6282324412773" class="btn">📱 Chat Admin (WhatsApp)</a>
+      <a href="https://t.me/AmarGoldenpips" class="btn">💬 Chat Admin (Telegram)</a>
+    </div>
+  </div>
+
+  <script>
+    function openPopup(type) {
+      document.getElementById('popup-' + type).style.display = 'block';
+    }
+    function closePopup(type) {
+      document.getElementById('popup-' + type).style.display = 'none';
+    }
+    window.onclick = function(event) {
+      document.querySelectorAll('.popup').forEach(function(popup) {
+        if (event.target == popup) {
+          popup.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
